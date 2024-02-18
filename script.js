@@ -14,4 +14,11 @@ function fibonacci(num) {
     }
 }
 
-module.exports = fibonacci;
+function displayFibonacci() {
+    let num = prompt("Enter a number:");
+    let result = fibonacci(num);
+    document.getElementById("result").innerText = "The Fibonacci number is " + result;
+}
+
+module.exports = { fibonacci, displayFibonacci };
+
