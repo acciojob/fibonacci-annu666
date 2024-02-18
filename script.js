@@ -1,14 +1,17 @@
 function fibonacci(num) {
-// your code here
-	let n1 = 0, n2 = 1, nextTerm;
-    
-    for (let i = 1; i <= num; i++) {
-        console.log(n1);
+    let n1 = 0, n2 = 1, nextTerm;
+
+    for (let i = 2; i <= num; i++) {
         nextTerm = n1 + n2;
         n1 = n2;
         n2 = nextTerm;
     }
+
+    if(num === 1) {
+        return n1;
+    } else {
+        return n2;
+    }
 }
-const numberOfTerms = 5;
-fibonacci(numberOfTerms);
+
 module.exports = fibonacci;
