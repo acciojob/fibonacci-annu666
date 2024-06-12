@@ -1,5 +1,5 @@
 function fibonacci(num) {
-    let n1 = 0, n2 = 0, nextTerm;
+    let n1 = 0, n2 = 1, nextTerm;
 
     if (num === 1) {
         return n1;
@@ -11,7 +11,7 @@ function fibonacci(num) {
         n2 = nextTerm;
     }
 
-    return n2;
+    return n1;
 }
 
 function displayFibonacci() {
